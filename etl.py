@@ -57,7 +57,8 @@ def process_song_data(spark, input_data, output_data):
     # read song data file
     print('Reading song_data from S3')
     df = spark.read.json(song_data)
-    
+    df = df.dropDuplicates()
+
     print('Schema of song data: ')
     df.printSchema()
     
