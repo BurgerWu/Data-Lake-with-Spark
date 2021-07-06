@@ -19,7 +19,7 @@ os.environ['AWS_SECRET_ACCESS_KEY']=config['AWS_KEYS']['AWS_SECRET_ACCESS_KEY']
 
 def create_spark_session():
     """
-    This functiob creates sparks session
+    This function creates sparks session
     
     Input: No specific input
     Output: Spark Session
